@@ -1,0 +1,46 @@
+.products-header {
+    margin-top: 140px;
+}
+.breadcrumbs {
+    margin-bottom: 12px;
+    a {
+        color: $orange;
+    }
+}
+.products-title {
+    text-transform: uppercase;
+}
+.products-subtext {
+    margin-bottom: 30px;
+}
+
+.product__adv {
+    background: $bg;
+    padding: 30px 0;
+}
+
+.product__adv-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.card-adv {
+    display: flex;
+    img {
+        width: 70px;
+        margin-right: 10px;
+    }
+    .card-adv__text {
+        .count {
+            font-size: 38px;
+            font-weight: 600;
+            color: $orange;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 0;
+        }
+    }
+}
