@@ -93,7 +93,7 @@
             }
         }
         
-           .catalog-sidebar{
+        .catalog-sidebar{
 
         position: static;
 
@@ -158,14 +158,44 @@
             }
 
             .catalog-sidebar__arrow{
-
                 transform:rotate(225deg);
-
             }
+        }
+    }
+
+    .single-product {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+    }
+
+    .product-gallery{
+
+        position:relative;
+
+        top:0;
+
+    }
+
+    .gallery-main{
+
+        .swiper-slide{
+
+            height:420px;
 
         }
 
     }
+    
+    .product-info{
+
+        margin-top:15px;
+
+    }
+
+
 
 
 

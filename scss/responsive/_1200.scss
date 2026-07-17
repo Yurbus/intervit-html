@@ -1,35 +1,35 @@
 @media (max-width:1200px){
     .menu{
-
         gap:24px;
-
     }
     .header{
-
         &__wrapper{
-
             gap:20px;
-
         }
-
     }
     
     .hero{
-
         padding: 70px 0;
-
         &__wrapper{
             gap:40px;
         }
-
         &__image{
-
             img{
                 max-width:550px;
             }
-
         }
+    }
 
+    .single-product {
+        &__wrapper {
+            gap: 50px;
+            grid-template-columns: 420px 1fr;
+        }
+    }
+    .product-gallery{
+        &__main{
+            height:460px;
+        }
     }
 
 

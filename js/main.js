@@ -74,3 +74,22 @@ function resetSidebar() {
 }
 
 media.addEventListener('change', resetSidebar);
+
+
+// Вкладки на сторінці товару
+const tabs = document.querySelectorAll('.product-tabs__btn');
+const contents = document.querySelectorAll('.product-tab');
+
+tabs.forEach((tab, index) => {
+
+    tab.addEventListener('click', () => {
+
+        tabs.forEach(btn => btn.classList.remove('active'));
+        contents.forEach(item => item.classList.remove('active'));
+
+        tab.classList.add('active');
+        contents[index].classList.add('active');
+
+    });
+
+});

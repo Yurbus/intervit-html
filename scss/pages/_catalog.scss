@@ -169,6 +169,31 @@
         box-shadow: 0 18px 40px rgba(0,0,0,.08);
     }
 }
+.product-card__content {
+    padding: 15px;
+    .product-card__title {
+        font-size: clamp(14px, 4vw, 18px);
+        min-height: 44px;
+    }
+    span {
+        display: block;
+        font-size: 12px;
+    }
+    .product-card__category {
+        
+    }
+    .product-card__material {
+        font-weight: 600;
+        margin-top: 12px;
+    }
+}
+.btn--product {
+    margin: 0  0 15px 15px;
+    border: 1px solid $border;
+    &:hover {
+        border: 1px solid $orange;
+    }
+}
 
 /*======================================
 =             Pagination              =

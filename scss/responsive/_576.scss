@@ -99,6 +99,47 @@
         font-size: 14px;
     }
 
+    .product-gallery{
+        &__main{
+            height:300px;
+            border-radius:16px;
+        }
+        &__thumb{
+            width:56px;
+            height:56px;
+        }
+        &__thumbs{
+            gap:10px;
+        }
+        .gallery-nav{
+            width:38px;
+            height:38px;
+        }
+    }
+    .gallery-main{
+
+        .swiper-slide{
+
+            height:280px;
+
+        }
+
+    }
+
+    .gallery-bottom{
+
+        gap:10px;
+
+    }
+
+    .gallery-prev,
+    .gallery-next{
+
+        width:38px;
+        height:38px;
+
+    }
+
 
 
 

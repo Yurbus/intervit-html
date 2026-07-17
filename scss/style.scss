@@ -24,9 +24,14 @@
 @import "components/technology";
 @import "components/help";
 @import "components/products-header";
+@import "components/product-gallery";
+@import "components/product-info";
+@import "components/product-tabs";
+@import "components/related-products";
 // PAGES
 @import "pages/home";
 @import "pages/catalog";
+@import "pages/single-product";
 
 // Responsive
 @import "responsive/1200";

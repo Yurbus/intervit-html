@@ -1,0 +1,15 @@
+.single-product {
+    padding: 130px 0 90px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 470px 1fr;
+        gap: 70px;
+        align-items: start;
+        margin-top: 40px;
+    }
+}
+.single-product__wrapper>*{
+
+    min-width:0;
+
+}
