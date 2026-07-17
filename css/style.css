@@ -724,7 +724,7 @@ body.menu-open {
 }
 
 .help {
-  background: url("../../images/bg-help.png") top/cover no-repeat;
+  background: url("../images/bg-help.png") top/cover no-repeat;
   position: relative;
 }
 .help::after {
