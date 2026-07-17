@@ -1,0 +1,57 @@
+.lang {
+    position: relative;
+
+    &__current {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        font-weight: 600;
+        font-size: 14px;
+
+        cursor: pointer;
+    }
+
+    &__list {
+        position: absolute;
+
+        right: 0;
+        top: calc(100% + 12px);
+
+        width: 70px;
+
+        background: $white;
+
+        border-radius: 8px;
+
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .3s;
+
+        li a{
+
+            display:block;
+
+            padding:10px;
+
+            text-align:center;
+
+        }
+
+    }
+
+    &:hover{
+
+        .lang__list{
+
+            opacity:1;
+            visibility:visible;
+
+        }
+
+    }
+
+}

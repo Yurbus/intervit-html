@@ -1,0 +1,55 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  height: 56px;
+  padding: 0 32px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  transition: .3s ease;
+
+  cursor: pointer;
+}
+.btn--primary {
+  background: $orange;
+  color: $white;
+  border: 1px solid $orange;
+
+  &:hover {
+      background: darken($orange, 8%);
+      border-color: darken($orange, 8%);
+      color: $white;
+  }
+}
+.btn--secondary {
+  background: $white;
+  color: $black;
+  border: 1px solid $border;
+
+  &:hover {
+      border-color: $orange;
+      color: $orange;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+  }
+}
+.btn {
+
+  svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+
+      stroke: currentColor;
+      transition: .3s;
+  }
+
+}

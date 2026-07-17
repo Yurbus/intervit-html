@@ -1,0 +1,41 @@
+.technology {
+    margin: 80px 0;
+}
+.technology__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.technology__item {
+    border: 1px solid $border;
+    background: $bg;
+    border-radius: 12px;
+    overflow: hidden;
+    .technology-img {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.technology-card__title {
+    text-transform: uppercase;
+    font-size: clamp(16px, 4vw, 20px);
+    padding: 18px 18px 0;
+    font-weight: 600;
+    min-height: 66px;
+}
+.technology-card__list {
+    padding: 0 19px;
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+            margin-right: 10px;
+            width: 12px;
+        }
+    }
+}
+.technology-card__button {
+    margin: 30px 18px;
+}

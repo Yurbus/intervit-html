@@ -1,0 +1,52 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 60px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    &__content {
+        flex: 0 1 50%;
+        max-width: 620px;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        max-width: 520px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__image {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

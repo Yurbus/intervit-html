@@ -1,0 +1,34 @@
+@media (max-width:768px){
+    .header{
+        &__wrapper{
+            height:72px;
+        }
+    }
+
+    .hero{
+        padding:50px 0;
+        &__wrapper{
+            gap:40px;
+        }
+        &__image{
+            img{
+                max-width:420px;
+            }
+        }
+    }
+
+    .directions__grid {
+        grid-template-columns: 1fr;
+    }
+    .technology__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .technology-card__title {
+        min-height: auto;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    
+}

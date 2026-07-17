@@ -1,0 +1,34 @@
+// BASE
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/global";
+
+// LAYOUT
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+
+// COMPONENTS
+@import "components/buttons";
+@import "components/cards";
+@import "components/breadcrumbs";
+@import "components/menu";
+@import "components/search";
+@import "components/lang";
+@import "components/burger";
+@import "components/hero";
+@import "components/advantges";
+@import "components/directions";
+@import "components/technology";
+@import "components/help";
+// PAGES
+@import "pages/home";
+@import "pages/catalog";
+
+// Responsive
+@import "responsive/1200";
+@import "responsive/992";
+@import "responsive/768";
+@import "responsive/576";
+
