@@ -8,7 +8,6 @@
     }
 
     .hero{
-        padding:40px 0;
         &__buttons{
             flex-direction:column;
             width:100%;
@@ -28,6 +27,7 @@
     }
     .advantges__wrapper {
         grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
 
 
