@@ -48,14 +48,29 @@ function initBurger() {
 
 }
 
-// const header = document.querySelector('.header');
 
-// window.addEventListener('scroll', () => {
+// Cторінка каталогу
+const sidebar = document.querySelector('.catalog-sidebar');
+const toggle = document.querySelector('.catalog-sidebar__toggle');
 
-//     if (window.scrollY > 80) {
-//         header.classList.add('header--fixed');
-//     } else {
-//         header.classList.remove('header--fixed');
-//     }
+if (sidebar && toggle) {
 
-// });
+    toggle.addEventListener('click', () => {
+
+        sidebar.classList.toggle('is-open');
+
+    });
+
+}
+
+const media = window.matchMedia('(min-width: 993px)');
+
+function resetSidebar() {
+
+    if (media.matches) {
+        sidebar.classList.remove('is-open');
+    }
+
+}
+
+media.addEventListener('change', resetSidebar);

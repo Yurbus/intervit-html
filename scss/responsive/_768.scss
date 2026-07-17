@@ -29,6 +29,53 @@
         min-height: auto;
     }
 
+    .catalog-sidebar {
+
+            gap: 20px;
+
+            &__title {
+
+                padding: 18px 20px;
+
+                font-size: 16px;
+
+            }
+
+            a {
+
+                padding: 16px 20px;
+
+                font-size: 15px;
+
+            }
+
+        }
+
+        .catalog-help {
+
+            padding: 28px 24px;
+
+            h3 {
+
+                font-size: 22px;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footer__wrapper {
         flex-direction: column;
     }

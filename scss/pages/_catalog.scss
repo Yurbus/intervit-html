@@ -1,0 +1,251 @@
+.catalog-page {
+    padding: 140px 0 100px;
+    &__heading {
+        max-width: 760px;
+        margin-bottom: 60px;
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 620px;
+            color: $text;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+}
+.catalog-content {
+    min-width: 0;
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #8A8A8A;
+        &:not(:last-child)::after {
+            content: "/";
+            margin-left: 12px;
+            color: #C7C7C7;
+        }
+        a {
+            color: inherit;
+            transition: .3s;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.catalog-sidebar {
+
+    &__toggle {
+
+        display: none;
+
+        width: 100%;
+
+        height: 58px;
+
+        padding: 0 24px;
+
+        background: $orange;
+
+        color: #fff;
+
+        border: 0;
+
+        border-radius: 12px;
+
+        cursor: pointer;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__arrow {
+
+        width: 10px;
+        height: 10px;
+
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+
+        transform: rotate(45deg);
+
+        transition: .3s;
+
+    }
+
+}
+
+.catalog-sidebar__menu.is-open {
+
+    ul {
+        display: block;
+    }
+
+}
+.catalog-sidebar {
+
+    &__toggle {
+
+        display: none;
+
+    }
+
+    &__content {
+
+        display: block;
+
+    }
+
+}
+.catalog-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border;
+    &__count {
+        font-size: 15px;
+        color: $text;
+        strong {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+    &__sort {
+        select {
+            min-width: 240px;
+            height: 48px;
+            padding: 0 18px;
+            border: 1px solid $border;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+            &:focus {
+                border-color: $orange;
+            }
+        }
+    }
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid $border;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .35s;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0,0,0,.08);
+    }
+}
+
+/*======================================
+=             Pagination              =
+======================================*/
+
+.pagination {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 70px;
+
+    &__item,
+    &__prev,
+    &__next {
+
+        width: 48px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid $border;
+        border-radius: 12px;
+
+        background: #fff;
+
+        color: $black;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        transition: .3s;
+
+        &:hover {
+
+            background: $orange;
+            border-color: $orange;
+            color: #fff;
+
+        }
+
+    }
+
+    &__item {
+
+        &--active {
+
+            background: $orange;
+            border-color: $orange;
+            color: #fff;
+
+            pointer-events: none;
+
+        }
+
+    }
+
+    &__dots {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        color: #999;
+
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+}

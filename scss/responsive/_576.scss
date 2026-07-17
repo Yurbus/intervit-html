@@ -30,6 +30,78 @@
         gap: 50px;
     }
 
+    .catalog-sidebar {
+
+        gap: 16px;
+
+        &__title {
+
+            padding: 16px 18px;
+
+            font-size: 15px;
+
+        }
+
+        a {
+
+            padding: 15px 18px;
+
+            font-size: 14px;
+
+        }
+
+    }
+
+    .catalog-help {
+
+        padding: 22px;
+
+        text-align: center;
+
+        &__icon {
+
+            margin: 0 auto 20px;
+
+            width: 64px;
+            height: 64px;
+
+            img {
+
+                width: 30px;
+                height: 30px;
+
+            }
+
+        }
+
+        h3 {
+
+            font-size: 20px;
+
+        }
+
+        p {
+
+            font-size: 15px;
+
+        }
+
+    }
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pagination__item, .pagination__prev, .pagination__next {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+
+
+
 
     .footer__menus {
         grid-template-columns: repeat(1, 1fr);
