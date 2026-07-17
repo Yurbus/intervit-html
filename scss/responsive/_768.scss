@@ -125,8 +125,58 @@
         gap:8px;
 
     }
+    .page-hero__image{
 
+        min-height:320px;
 
+        border-radius:18px;
+
+    }
+
+    .page-hero__buttons{
+
+        flex-direction:column;
+
+    }
+
+    .page-hero__buttons .btn{
+
+        width:100%;
+
+    }
+    .advantages{
+
+        padding:60px 0;
+
+    }
+
+    .advantages__grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .advantage-card{
+
+        padding:28px;
+
+    }
+
+    .advantage-card__icon{
+
+        width:60px;
+        height:60px;
+
+        svg{
+
+            width:28px;
+            height:28px;
+
+        }
+
+    }
 
 
 

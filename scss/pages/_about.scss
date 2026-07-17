@@ -1,0 +1,214 @@
+.page-hero {
+
+    padding: 140px 0 80px;
+
+    overflow: hidden;
+
+}
+.page-hero__wrapper{
+
+    display:grid;
+
+    grid-template-columns:520px 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    position:relative;
+
+}
+.page-hero__content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+.page-hero__title{
+
+    margin-bottom:25px;
+
+    text-transform:uppercase;
+
+}
+.page-hero__text{
+
+    max-width:520px;
+
+    margin-bottom:40px;
+
+    p{
+
+        font-size:18px;
+
+        line-height:1.8;
+
+        color:$text;
+
+    }
+
+}
+.page-hero__buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+.page-hero__image{
+
+    position:relative;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    min-height:500px;
+
+    img{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        display:block;
+
+    }
+
+}
+.page-hero__image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,.75) 12%,
+        rgba(255,255,255,.25) 28%,
+        rgba(255,255,255,0) 50%
+    );
+
+    z-index:2;
+
+}
+.page-hero__image img{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/*======================================
+=            Advantages               =
+======================================*/
+
+.advantages {
+
+    padding: 80px 0 100px;
+
+}
+.advantages .section-heading{
+
+    margin-bottom: 50px;
+
+}
+.advantages__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+.advantage-card{
+
+    padding:35px;
+
+    border:1px solid $border;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    transition:.35s ease;
+
+    &:hover{
+
+        transform:translateY(-6px);
+
+        border-color:$orange;
+
+        box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    }
+
+}
+.advantage-card__icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:rgba($orange,.08);
+
+    color:$orange;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:24px;
+
+    transition:.35s;
+
+    svg{
+
+        width:34px;
+        height:34px;
+
+        stroke-width:1.8;
+
+    }
+
+}
+
+.advantage-card:hover .advantage-card__icon{
+
+    background:$orange;
+
+    color:#fff;
+
+    transform:rotate(-10deg);
+
+}
+.advantage-card h3{
+
+    margin-bottom:16px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+}
+.advantage-card p{
+
+    color:$text;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}

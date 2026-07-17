@@ -32,5 +32,17 @@
         }
     }
 
+    .page-hero__wrapper{
+
+        grid-template-columns:450px 1fr;
+
+        gap:40px;
+
+    }
+    .advantages__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
 
 }

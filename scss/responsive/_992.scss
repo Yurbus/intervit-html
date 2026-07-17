@@ -194,6 +194,37 @@
         margin-top:15px;
 
     }
+    .page-hero{
+
+        padding:40px 0 60px;
+
+    }
+
+    .page-hero__wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .page-hero__content{
+
+        order:2;
+
+    }
+
+    .page-hero__image{
+
+        order:1;
+
+        min-height:420px;
+
+    }
+
+    .page-hero__text{
+
+        max-width:100%;
+
+    }
 
 
 
