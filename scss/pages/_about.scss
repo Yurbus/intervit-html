@@ -9,7 +9,7 @@
 
     display:grid;
 
-    grid-template-columns:520px 1fr;
+    grid-template-columns:620px 1fr;
 
     gap:70px;
 
@@ -105,6 +105,19 @@
 
     inset:0;
 
+}
+
+/*======================================
+=            Mission               =
+======================================*/
+
+.mission {
+}
+
+.section-heading {
+}
+.mission__content {
+    max-width: 760px;
 }
 
 /*======================================
