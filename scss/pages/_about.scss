@@ -115,10 +115,82 @@
 }
 
 .section-heading {
+    margin-bottom: 50px;
 }
 .mission__content {
-    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
+
+/*======================================
+=            stats-block               =
+======================================*/
+
+.stats-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stat {
+  text-align: start;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.stat.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line-container {
+    width: 50px;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.line {
+    width: 0;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    transition: width 2s ease;
+}
+
+.line.visible {
+    width: 100%;
+}
+
+.number__wrapp {
+    display: flex;
+    align-items: center;
+}
+.number__wrapp span {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.label {
+    font-size: 14px;
+}
+
+
+
 
 /*======================================
 =            Advantages               =
@@ -135,32 +207,22 @@
 
 }
 .advantages__grid{
-
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
+    gap:18px;
 
 }
 .advantage-card{
-
-    padding:35px;
-
+    padding:20px;
     border:1px solid $border;
-
     border-radius:20px;
-
     background:#fff;
-
     transition:.35s ease;
 
     &:hover{
 
-        transform:translateY(-6px);
-
+        transform:translateY(-2px);
         border-color:$orange;
-
         box-shadow:0 15px 40px rgba(0,0,0,.08);
 
     }

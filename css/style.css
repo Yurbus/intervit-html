@@ -1246,10 +1246,10 @@ body.menu-open {
 }
 
 .product-tabs__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+  position: sticky;
+  top: 72px;
+  z-index: 15;
+  background: #fff;
   margin-bottom: 45px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -1315,13 +1315,6 @@ body.menu-open {
 }
 .spec-table__row strong {
   font-weight: 600;
-}
-
-.product-tabs__nav {
-  position: sticky;
-  top: 90px;
-  z-index: 15;
-  background: #fff;
 }
 
 .catalog-page {
@@ -1675,8 +1668,90 @@ body.menu-open {
 /*======================================
 =            Mission               =
 ======================================*/
+.section-heading {
+  margin-bottom: 50px;
+}
+
 .mission__content {
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/*======================================
+=            stats-block               =
+======================================*/
+.stats-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stat {
+  text-align: start;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+  transition: opacity 2s ease, -webkit-transform 1s ease;
+  transition: opacity 2s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 1s ease, -webkit-transform 1s ease;
+}
+
+.stat.visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.line-container {
+  width: 50px;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.line {
+  width: 0;
+  height: 2px;
+  background-color: #1f1f1f;
+  position: absolute;
+  left: 0;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+}
+
+.line.visible {
+  width: 100%;
+}
+
+.number__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number__wrapp span {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.number {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.label {
+  font-size: 14px;
 }
 
 /*======================================
@@ -1693,11 +1768,11 @@ body.menu-open {
 .advantages__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 18px;
 }
 
 .advantage-card {
-  padding: 35px;
+  padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
   background: #fff;
@@ -1705,8 +1780,8 @@ body.menu-open {
   transition: 0.35s ease;
 }
 .advantage-card:hover {
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
   border-color: #ff6b00;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
@@ -1956,7 +2031,7 @@ body.menu-open {
     margin-top: 15px;
   }
   .page-hero {
-    padding: 40px 0 60px;
+    padding: 100px 0 60px;
   }
   .page-hero__wrapper {
     grid-template-columns: 1fr;
@@ -2025,7 +2100,7 @@ body.menu-open {
     font-size: 22px;
   }
   .single-product {
-    padding: 40px 0 70px;
+    padding: 100px 0 70px;
   }
   .product-gallery__main {
     height: 360px;
@@ -2063,7 +2138,7 @@ body.menu-open {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
-    padding: 15px 20px;
+    padding: 15px;
   }
   .spec-table__row {
     grid-template-columns: 1fr;
@@ -2099,6 +2174,9 @@ body.menu-open {
   .advantage-card__icon svg {
     width: 28px;
     height: 28px;
+  }
+  .mission__content {
+    grid-template-columns: 1fr;
   }
   .footer__wrapper {
     -webkit-box-orient: vertical;
@@ -2203,11 +2281,22 @@ body.menu-open {
     width: 38px;
     height: 38px;
   }
-  .page-hero {
-    padding: 30px 0 50px;
+  .btn--product {
+    padding: 7px 14px;
+    font-size: 14px;
+    height: 38px;
+  }
+  .product-tabs__btn {
+    font-size: 14px;
+  }
+  .product-info__row {
+    padding: 10px 0;
   }
   .page-hero__image {
     min-height: 260px;
+  }
+  .section-heading {
+    margin-bottom: 15px;
   }
   .page-hero__text p {
     font-size: 16px;
@@ -2220,6 +2309,9 @@ body.menu-open {
   }
   .advantage-card p {
     font-size: 15px;
+  }
+  .stats-block {
+    grid-template-columns: 1fr;
   }
   .footer__menus {
     grid-template-columns: repeat(1, 1fr);

@@ -30,48 +30,46 @@
     }
 
     .catalog-sidebar {
-            gap: 20px;
-            &__title {
-                padding: 18px 20px;
-                font-size: 16px;
-            }
-            a {
-                padding: 16px 20px;
-                font-size: 15px;
-            }
+        gap: 20px;
+        &__title {
+            padding: 18px 20px;
+            font-size: 16px;
         }
-        .catalog-help {
-            padding: 28px 24px;
-            h3 {
-                font-size: 22px;
-            }
+        a {
+            padding: 16px 20px;
+            font-size: 15px;
         }
-
-        .single-product {
-            padding: 40px 0 70px;
+    }
+    .catalog-help {
+        padding: 28px 24px;
+        h3 {
+            font-size: 22px;
         }
-        .product-gallery{
-            &__main{
-                height:360px;
-            }
-            &__thumb{
-                width:64px;
-                height:64px;
-            }
+    }
+
+    .single-product {
+        padding: 100px 0 70px;
+    }
+    .product-gallery{
+        &__main{
+            height:360px;
         }
-        .gallery-main{
+        &__thumb{
+            width:64px;
+            height:64px;
+        }
+    }
+    .gallery-main{
 
-            .swiper-slide{
+        .swiper-slide{
 
-                height:340px;
-
-            }
+            height:340px;
 
         }
-         .product-info__row{
 
+    }
+    .product-info__row{
         grid-template-columns:1fr;
-
         gap:8px;
 
     }
@@ -81,103 +79,68 @@
         flex-direction:column;
 
     }
-
     .product-qty{
-
         width:100%;
-
     }
-
     .product-info{
-
         .btn{
-
             width:100%;
-
             min-width:100%;
-
         }
 
     }
 
     .product-tabs__nav{
-
         overflow:auto;
-
         white-space:nowrap;
-
         padding-bottom:10px;
-
     }
 
     .product-tabs__btn{
-
         flex:none;
-
-        padding:15px 20px;
-
+        padding:15px;
     }
 
     .spec-table__row{
-
         grid-template-columns:1fr;
-
         gap:8px;
-
     }
     .page-hero__image{
-
         min-height:320px;
-
         border-radius:18px;
-
     }
 
     .page-hero__buttons{
-
         flex-direction:column;
-
     }
 
     .page-hero__buttons .btn{
-
         width:100%;
-
     }
     .advantages{
-
         padding:60px 0;
-
     }
 
     .advantages__grid{
-
         grid-template-columns:1fr;
-
         gap:20px;
-
     }
 
     .advantage-card{
-
         padding:28px;
-
     }
 
     .advantage-card__icon{
-
         width:60px;
         height:60px;
-
         svg{
-
             width:28px;
             height:28px;
-
         }
-
     }
-
+    .mission__content {
+        grid-template-columns: 1fr;
+    }
 
 
 

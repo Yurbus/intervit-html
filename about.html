@@ -105,68 +105,44 @@
 <main>
 
     <section class="page-hero">
-
         <div class="container">
-
             <nav class="breadcrumbs">
-
                 <ul class="breadcrumbs__list">
-
                     <li class="breadcrumbs__item">
                         <a href="/">Головна</a>
                     </li>
-
                     <li class="breadcrumbs__item">
                         <span>Про компанію</span>
                     </li>
-
                 </ul>
-
             </nav>
-
             <div class="page-hero__wrapper">
-
                 <div class="page-hero__content">
-
                     <h1 class="page-hero__title">
                         Про компанію
                     </h1>
-
                     <div class="page-hero__text">
-
                         <p>
                             INTERVIT — це надійний партнер для промислових підприємств
                             та металургійного виробництва. Ми постачаємо високоточний
                             інструмент, комплектуючі та сучасні технологічні рішення
                             для ефективної обробки деталей.
                         </p>
-
                     </div>
-
                     <div class="page-hero__buttons">
-
                         <a href="#" class="btn btn--primary">
                             Запросити комерційну пропозицію
                         </a>
-
                         <a href="#" class="btn btn--secondary">
                             Зв'язатися з нами
                         </a>
-
                     </div>
-
                 </div>
-
                 <div class="page-hero__image">
-
-                    <img src="images/about-main.jpg" alt="INTERVIT">
-
+                    <img src="images/about-main.png" alt="INTERVIT">
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <section class="mission">
@@ -175,61 +151,73 @@
                 <h2>Наша місія</h2>
             </div>
             <div class="mission__content">
-                <p>
-                    Забеспечувати промисловість ефективними рішенями, що підтримують промисловість. Гарантуємо якість та надійність 
-                    виробничих процесів наших клієнтів.
-                </p>
-                <p>
-                    Компанія «Інтервіт» була заснована в 1992 році і в даний час складається з групи підприємств, об’єднаних 
-                    спільним завданням виробничо-впроваджувальної діяльності.
-                </p>
-                <p>
-                    Серед наших постійних замовників – десятки підприємств металургійної, машинобудівної, тютюнової, 
-                    кондитерської галузей з України та інших країн Європи та Азії.
-                </p>
+                <div class="content__left">
+                    <p>
+                        Забеспечувати промисловість ефективними рішенями, що підтримують промисловість. Гарантуємо якість та надійність 
+                        виробничих процесів наших клієнтів.
+                    </p>
+                    <p>
+                        Компанія «Інтервіт» була заснована в 1992 році і в даний час складається з групи підприємств, об’єднаних 
+                        спільним завданням виробничо-впроваджувальної діяльності.
+                    </p>
+                    <p>
+                        Серед наших постійних замовників – десятки підприємств металургійної, машинобудівної, тютюнової, 
+                        кондитерської галузей з України та інших країн Європи та Азії.
+                    </p>
+                </div>
+                <div class="content__right">
+                    <div class="m-about__right">
+                        <div class="stats-block" id="stats">
+                            <div class="stat">
+                                <div class="line"></div>
+                                <div class="number__wrapp">
+                                    <div class="number" data-target="34">34</div>
+                                </div>
+                                <div class="label">Роки на ринки праці</div>
+                            </div>
+                            <div class="stat">
+                                <div class="line"></div>
+                                <div class="number__wrapp">
+                                    <div class="number" data-target="16">16</div>
+                                </div>
+                                <div class="label">Одиниць сучасного обладнання</div>
+                            </div>
+                            <div class="stat">
+                                <div class="line"></div>
+                                <div class="number__wrapp">
+                                    <div class="number" data-target="220000">220000</div>
+                                </div>
+                                <div class="label">Виконаних замовлень</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="advantages">
-
         <div class="container">
-
             <div class="section-heading">
-
                 <h2>Наші переваги</h2>
-
             </div>
-
             <div class="advantages__grid">
 
                 <!-- Card -->
-
                 <article class="advantage-card">
-
                     <div class="advantage-card__icon">
-
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
                             <circle cx="12" cy="8" r="3"/>
-
                             <path d="M5 20c1-4 4-6 7-6s6 2 7 6"/>
-
                         </svg>
-
                     </div>
-
                     <h3>
                         Комплексний підхід
                     </h3>
-
                     <p>
-
                         Від інструменту до виробничих
                         технологічних рішень.
-
                     </p>
-
                 </article>
 
                 <!-- Card -->
@@ -384,10 +372,24 @@
                 </article>
 
             </div>
-
         </div>
-
     </section>
+
+    <section class="help">
+        <div class="container">
+            <div class="help__wrapper">
+                <div class="help-text">Потрібна допомога у виборі інструменту або технологічного рішення?</div>
+                <p>Наші інженери підберуть оптимальний варіант під ваші задачі</p>
+                <a href="#" class="help-card__button btn btn--primary">
+                    Отримати консультацію
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5.00016 11L17.2502 11L12.0002 5.75L12.6602 5L19.1602 11.5L12.6602 18L12.0002 17.25L17.2502 12L5.00016 12L5.00016 11Z" fill="#1F1F1F"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
 
 </main>
 
