@@ -48,6 +48,50 @@ const galleryMain = new Swiper(".gallery-main", {
 
 });
 
+const relatedSlider = new Swiper('.related-slider', {
+
+    watchOverflow: true,
+
+    slidesPerView: 4,
+
+    spaceBetween: 24,
+
+    navigation: {
+
+        nextEl: '.related-next',
+        prevEl: '.related-prev'
+
+    },
+
+    breakpoints: {
+
+        320: {
+
+            slidesPerView: 1.2
+
+        },
+
+        576: {
+
+            slidesPerView: 2
+
+        },
+
+        768: {
+
+            slidesPerView: 3
+
+        },
+
+        1200: {
+
+            slidesPerView: 4
+
+        }
+
+    }
+
+});
 
 Fancybox.bind("[data-fancybox='product-gallery']", {
 
