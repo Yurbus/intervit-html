@@ -178,7 +178,6 @@
         top:0;
 
     }
-
     .gallery-main{
 
         .swiper-slide{
@@ -188,7 +187,6 @@
         }
 
     }
-    
     .product-info{
 
         margin-top:15px;
@@ -221,10 +219,27 @@
     }
 
     .page-hero__text{
-
         max-width:100%;
-
     }
+    .contacts-hero__wrapper{
+        grid-template-columns:1fr;
+    }
+    .contacts-hero__map{
+        min-height:450px;
+    }
+    .contacts-hero__map iframe {
+        height: 450px;
+    }
+    .contact-section__wrapper{
+        grid-template-columns:1fr;
+    }
+    .contact-cta{
+        min-height:530px;
+    }
+    .contact-cta__content {
+        padding: 70px 40px;
+    }
+
 
 
 

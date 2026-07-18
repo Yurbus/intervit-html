@@ -28,11 +28,15 @@
 @import "components/product-info";
 @import "components/product-tabs";
 @import "components/related-products";
+@import "components/contact-form";
+@import "components/cta-card";
+
 // PAGES
 @import "pages/home";
 @import "pages/catalog";
 @import "pages/single-product";
 @import "pages/about";
+@import "pages/contacts";
 
 // Responsive
 @import "responsive/1200";

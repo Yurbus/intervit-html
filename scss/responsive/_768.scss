@@ -163,7 +163,49 @@
         height:180px;
 
     }
+    .contacts-hero{
 
+        padding:100px 0 60px;
+
+    }
+
+    .contact-item{
+
+        gap:14px;
+
+    }
+
+    .contact-item__icon{
+
+        width:48px;
+        height:48px;
+
+    }
+
+    .contact-item a,
+    .contact-item p{
+
+        font-size:16px;
+
+    }
+
+    .contacts-hero__map{
+
+        min-height:320px;
+
+    }
+    .contact-section{
+        padding:60px 0;
+    }
+    .contact-form-card{
+        padding:30px;
+    }
+    .contact-form__grid{
+        grid-template-columns:1fr;
+    }
+    .contact-cta__content{
+        padding:30px;
+    }
 
 
 

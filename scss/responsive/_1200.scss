@@ -1,4 +1,11 @@
 @media (max-width:1200px){
+    .header{
+        &__logo{
+            img{
+                max-height:28px;
+            }
+        }
+    }
     .menu{
         gap:24px;
     }
