@@ -3051,10 +3051,6 @@ body.menu-open {
   transition: 0.3s;
 }
 
-.technology-link:hover {
-  gap: 16px;
-}
-
 @media (max-width: 1200px) {
   .header__logo img {
     max-height: 28px;
