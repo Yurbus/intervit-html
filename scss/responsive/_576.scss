@@ -168,7 +168,32 @@
         padding: 20px;
         font-size: 14px;
     }
+    .technology-hero {
+        padding: 100px 0 70px;
+    }
+    .technology-features__grid{
 
+        grid-template-columns:1fr;
+
+    }
+
+    .technology-feature{
+
+        padding:24px;
+
+    }
+    .technology-capabilities,
+    .technology-equipment{
+
+        padding:25px;
+
+    }
+
+    .technology-equipment__gallery{
+
+        grid-template-columns:1fr;
+
+    }
 
 
 

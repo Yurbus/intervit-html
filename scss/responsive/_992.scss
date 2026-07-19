@@ -265,37 +265,52 @@
     }
 
     .post-hero__content{
-
         margin-bottom:40px;
-
     }
-
     .post-meta{
-
         gap:18px;
-
     }
     .post-layout__wrapper{
-
         grid-template-columns:1fr;
-
     }
-
     .post-sidebar{
-
         order:-1;
-
     }
     .post-sidebar__sticky{
-
         position:static;
-
     }
     .post-sidebar {
         position: relative;
         transform: translateY(-90px);
     }
+    .technology-hero__wrapper{
+        grid-template-columns:1fr;
+    }
+    .technology-hero__content{
+        order:2;
+    }
+    .technology-hero__image{
+        order:1;
+    }
+    .technology-features__grid{
 
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .technology-about{
+
+        padding:70px 0;
+
+    }
+
+    .technology-about__grid{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
 
 
 
