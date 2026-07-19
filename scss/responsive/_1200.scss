@@ -51,5 +51,20 @@
         grid-template-columns:repeat(2,1fr);
 
     }
+    .knowledge-categories__grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+    .articles__grid{
+
+        grid-template-columns:repeat(2,1fr);
+        gap: 12px;
+
+    }
+
+
+
+
 
 }

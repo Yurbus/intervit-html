@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Статті</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">
+                <img src="images/logotype.svg" alt="Intervit">
+            </a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="products.html" class="menu__link">
+                            Продукція
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--parent">
+                        <a href="#" class="menu__link menu__link--parent">
+                            Технології
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#">Азотування та термообробка</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">Електроерозія (EDM)</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">Заточування інструменту</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">
+                            Про компанію
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">
+                            Контакти
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="knowledge.html" class="menu__link">
+                            База знань
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="header__actions">
+
+                <button class="header__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 17L21 21M3 11C3 13.1217 3.84285 15.1566 5.34315 16.6569C6.84344 18.1571 8.87827 19 11 19C13.1217 19 15.1566 18.1571 16.6569 16.6569C18.1571 15.1566 19 13.1217 19 11C19 8.87827 18.1571 6.84344 16.6569 5.34315C15.1566 3.84285 13.1217 3 11 3C8.87827 3 6.84344 3.84285 5.34315 5.34315C3.84285 6.84344 3 8.87827 3 11Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="lang">
+                    <button class="lang__current">
+                        UA
+                    </button>
+                    <ul class="lang__list">
+                        <li>
+                            <a href="#">EN</a>
+                        </li>
+                        <li>
+                            <a href="#">PL</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn--primary header__btn--primary">
+                    Запросити КП
+                </a>
+
+                <button class="burger">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+<section class="knowledge-hero">
+
+    <div class="container">
+
+        <nav class="breadcrumbs">
+
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="/">Головна</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>База знань</span>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="knowledge-hero__wrapper">
+
+            <div class="knowledge-hero__content">
+
+                <h1>
+                    База знань
+                </h1>
+
+                <p class="knowledge-hero__text">
+
+                    Корисні матеріали, статті, огляди,
+                    інструкції та поради від наших експертів.
+
+                </p>
+
+                <form class="knowledge-search">
+
+                    <input
+                        type="text"
+                        placeholder="Пошук по статтях...">
+
+                    <button type="submit">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7"
+                                stroke="currentColor"
+                                stroke-width="2"/>
+
+                            <path
+                                d="M20 20L17 17"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"/>
+
+                        </svg>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="knowledge-hero__image">
+
+                <img
+                    src="images/knowlage.png"
+                    alt="База знань">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="knowledge-categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Категорії</h2>
+
+        </div>
+
+        <div class="knowledge-categories__grid">
+
+            <a href="#" class="knowledge-category">
+
+                <span class="knowledge-category__number">
+                    01
+                </span>
+
+                <h3 class="knowledge-category__title">
+                    Технології
+                </h3>
+
+                <span class="knowledge-category__count">
+                    12 статей
+                </span>
+
+            </a>
+
+            <a href="#" class="knowledge-category">
+
+                <span class="knowledge-category__number">
+                    02
+                </span>
+
+                <h3 class="knowledge-category__title">
+                    Інструмент
+                </h3>
+
+                <span class="knowledge-category__count">
+                    16 статей
+                </span>
+
+            </a>
+
+            <a href="#" class="knowledge-category">
+
+                <span class="knowledge-category__number">
+                    03
+                </span>
+
+                <h3 class="knowledge-category__title">
+                    Матеріали
+                </h3>
+
+                <span class="knowledge-category__count">
+                    9 статей
+                </span>
+
+            </a>
+
+            <a href="#" class="knowledge-category">
+
+                <span class="knowledge-category__number">
+                    04
+                </span>
+
+                <h3 class="knowledge-category__title">
+                    Електроерозія
+                </h3>
+
+                <span class="knowledge-category__count">
+                    14 статей
+                </span>
+
+            </a>
+
+            <a href="#" class="knowledge-category">
+
+                <span class="knowledge-category__number">
+                    05
+                </span>
+
+                <h3 class="knowledge-category__title">
+                    Виробничі процеси
+                </h3>
+
+                <span class="knowledge-category__count">
+                    11 статей
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="articles">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Всі статті</h2>
+
+        </div>
+
+        <div class="articles__grid">
+
+            <!-- Card -->
+
+            <article class="article-card">
+                <a href="single-post.html" class="article-card__image">
+                    <img src="images/knowlage.png" alt="">
+                </a>
+                <div class="article-card__content">
+                    <span class="article-card__date">
+                        12.05.2024
+                    </span>
+                    <h3>
+                        <a href="single-post.html">
+                            Як правильно обрати ріжучий інструмент для обробки прокатних валків
+                        </a>
+                    </h3>
+                    <p>
+                        Ключові параметри, які варто врахувати
+                        перед вибором інструменту.
+                    </p>
+                    <a href="single-post.html" class="article-card__link">
+                        Читати далі
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                            <path d="M13 6L19 12L13 18"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+             <article class="article-card">
+                <a href="single-post.html" class="article-card__image">
+                    <img src="images/knowlage.png" alt="">
+                </a>
+                <div class="article-card__content">
+                    <span class="article-card__date">
+                        12.05.2024
+                    </span>
+                    <h3>
+                        <a href="single-post.html">
+                            Як правильно обрати ріжучий інструмент для обробки прокатних валків
+                        </a>
+                    </h3>
+                    <p>
+                        Ключові параметри, які варто врахувати
+                        перед вибором інструменту.
+                    </p>
+                    <a href="single-post.html" class="article-card__link">
+                        Читати далі
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                            <path d="M13 6L19 12L13 18"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+             <article class="article-card">
+                <a href="single-post.html" class="article-card__image">
+                    <img src="images/knowlage.png" alt="">
+                </a>
+                <div class="article-card__content">
+                    <span class="article-card__date">
+                        12.05.2024
+                    </span>
+                    <h3>
+                        <a href="single-post.html">
+                            Як правильно обрати ріжучий інструмент для обробки прокатних валків
+                        </a>
+                    </h3>
+                    <p>
+                        Ключові параметри, які варто врахувати
+                        перед вибором інструменту.
+                    </p>
+                    <a href="single-post.html" class="article-card__link">
+                        Читати далі
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                            <path d="M13 6L19 12L13 18"
+                                  stroke="currentColor"
+                                  stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="knowledge-latest">
+
+    <div class="container">
+
+        <div class="knowledge-latest__wrapper">
+
+            <div class="knowledge-latest__content">
+
+                <div class="section-heading">
+
+                    <h2>Останні публікації</h2>
+
+                </div>
+
+                <div class="latest-posts">
+
+                    <article class="latest-post">
+
+                        <a href="single-post.html" class="latest-post__image">
+                            <img src="images/knowlage.png" alt="">
+                        </a>
+
+                        <div class="latest-post__content">
+
+                            <span class="latest-post__date">
+                                05.05.2024
+                            </span>
+
+                            <h3>
+                                <a href="single-post.html">
+                                    Термообробка сталі: особливості процесу
+                                </a>
+                            </h3>
+
+                            <p>
+                                Що таке термообробка сталі та які її основні види.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="latest-post">
+
+                        <a href="single-post.html" class="latest-post__image">
+                            <img src="images/knowlage.png" alt="">
+                        </a>
+
+                        <div class="latest-post__content">
+
+                            <span class="latest-post__date">
+                                02.05.2024
+                            </span>
+
+                            <h3>
+                                <a href="single-post.html">
+                                    Заточування інструменту
+                                </a>
+                            </h3>
+
+                            <p>
+                                Як збільшити ресурс інструменту.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="latest-post">
+
+                        <a href="single-post.html" class="latest-post__image">
+                            <img src="images/knowlage.png" alt="">
+                        </a>
+
+                        <div class="latest-post__content">
+
+                            <span class="latest-post__date">
+                                25.04.2024
+                            </span>
+
+                            <h3>
+                                <a href="single-post.html">
+                                    Контроль якості виробів
+                                </a>
+                            </h3>
+
+                            <p>
+                                Етапи перевірки деталей після обробки.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <aside class="knowledge-cta">
+
+                <div class="knowledge-cta__content">
+
+                    <h2>
+                        Маєте питання?
+                    </h2>
+
+                    <p>
+
+                        Наші спеціалісти допоможуть
+                        підібрати технологію або
+                        професійно проконсультують.
+
+                    </p>
+
+                    <a href="#" class="btn btn--primary">
+                        Задати питання
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <a href="/" class="footer__logo">
+                    <img src="images/logotype.svg" alt="Intervit">
+                </a>
+                <p class="footer__description">
+                    Високоточні рішення для промисловості
+                    та метизного виробництва
+                </p>
+            </div>
+
+            <div class="footer__menus">
+                <div class="footer__column">
+                    <h4 class="footer__title">
+                        Компанія
+                    </h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Виробництво</a></li>
+                        <li><a href="#">Якість</a></li>
+                        <li><a href="#">Новини</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">
+                        Продукція
+                    </h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Ріжучий інструмент</a></li>
+                        <li><a href="#">Комплектуючі</a></li>
+                        <li><a href="#">Каталог продукції</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">
+                        Технології
+                    </h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Азотування та термообробка</a></li>
+                        <li><a href="#">Електроерозія (EDM)</a></li>
+                        <li><a href="#">Заточування інструменту</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column footer__contacts">
+                    <h4 class="footer__title">
+                        Контакти
+                    </h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <img src="images/mingcute_phone-line.svg" alt="">
+                            <a href="tel:+380441234567">
+                                +38 (044) 123-45-67
+                            </a>
+                        </li>
+                        <li>
+                            <img src="images/lucide_mail.svg" alt="">
+                            <a href="mailto:info@intervit.ua">
+                                info@intervit.ua
+                            </a>
+                        </li>
+                        <li>
+                            <img src="images/boxicons_location.svg" alt="">
+                            Україна, м. Київ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="left-content">
+                <p>© 1992 - 2026 Інтервіт. Всі права захищені.</p>
+            </div>
+            <div class="right-content">
+                <a href="">Політика конфеденційності</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

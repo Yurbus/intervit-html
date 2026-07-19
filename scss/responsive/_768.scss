@@ -206,6 +206,181 @@
     .contact-cta__content{
         padding:30px;
     }
+    .knowledge-hero{
+        padding:100px 0 60px;
+    }
+    .knowledge-search{
+        max-width:100%;
+    }
+    .knowledge-search input{
+        height:56px;
+    }
+    .knowledge-categories{
+
+        padding:60px 0;
+
+    }
+
+    .knowledge-categories__grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .knowledge-category{
+
+        min-height:150px;
+
+        padding:25px;
+
+    }
+
+    .knowledge-category__title{
+
+        font-size:20px;
+
+    }
+    .articles{
+
+        padding:60px 0;
+
+    }
+
+    .article-card__content{
+
+        padding:22px;
+
+    }
+
+    .article-card h3{
+
+        font-size:20px;
+
+    }
+    .knowledge-latest{
+
+        padding:60px 0;
+
+    }
+
+    .latest-post{
+
+        flex-direction:column;
+
+    }
+
+    .latest-post__image{
+
+        width:100%;
+
+    }
+
+    .latest-post__image img{
+
+        aspect-ratio:16/9;
+
+    }
+
+    .knowledge-cta{
+
+        padding:30px;
+
+    }
+    .post-hero__excerpt{
+
+        font-size:16px;
+
+    }
+
+    .post-meta{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .post-hero__image img{
+
+        aspect-ratio:16/10;
+
+    }
+
+    .specifications{
+
+        border:none;
+
+    }
+
+    .specifications__head{
+
+        display:none;
+
+    }
+
+    .specifications__row{
+
+        display:block;
+
+        margin-bottom:20px;
+
+        padding:20px;
+
+        border:1px solid $border;
+
+        border-radius:16px;
+
+    }
+
+    .specifications__row div{
+
+        display:flex;
+
+        justify-content:space-between;
+
+        padding:10px 0;
+
+        border-bottom:1px solid #eee;
+
+    }
+
+    .specifications__row div:last-child{
+
+        border:none;
+
+    }
+
+    .specifications__row div:nth-child(1)::before{
+
+        content:"Матеріал";
+
+        font-weight:600;
+
+        color:#777;
+
+    }
+
+    .specifications__row div:nth-child(2)::before{
+
+        content:"Точність";
+
+        font-weight:600;
+
+        color:#777;
+
+    }
+
+    .specifications__row div:nth-child(3)::before{
+
+        content:"Застосування";
+
+        font-weight:600;
+
+        color:#777;
+
+    }
+
+
 
 
 
