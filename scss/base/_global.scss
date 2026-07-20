@@ -32,17 +32,17 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.625rem, 1rem + 2.5vw, 2.25rem); // 32px → 56px
+  font-size: clamp(1.125rem, .75rem + 2.5vw, 2.25rem); // 32px → 56px
   line-height: 1.15;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: clamp(1.125rem, 1rem + 1.3vw, 2rem); // 26px → 40px
+  font-size: clamp(1rem, 1rem + 1.3vw, 2rem); // 26px → 40px
   line-height: 1.2;
 }
 .h4 {
-  font-size: clamp(1rem, 1rem + .8vw, 1.625rem); // 22px → 32px
+  font-size: clamp(.75rem, 1rem + .8vw, 1.625rem); // 22px → 32px
   font-weight: 600;
   line-height: 1.25;
 }

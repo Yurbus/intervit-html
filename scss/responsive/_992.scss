@@ -312,6 +312,36 @@
         gap:30px;
 
     }
+    .search-card{
+
+        grid-template-columns:220px 1fr;
+
+    }
+    .error-404{
+
+        padding:100px 0 80px;
+
+    }
+
+    .error-404__wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .error-404__image{
+
+        display: none;
+
+    }
+
+    .error-404__number{
+
+        font-size:90px;
+
+    }
+
+
 
 
 

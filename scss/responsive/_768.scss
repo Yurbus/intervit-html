@@ -386,7 +386,17 @@
     .technology-features {
         padding: 30px 0;
     }
+    .search-card{
 
+        grid-template-columns:1fr;
+
+    }
+
+    .search-card__image img{
+
+        aspect-ratio:16/10;
+
+    }
 
 
 
