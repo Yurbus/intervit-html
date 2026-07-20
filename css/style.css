@@ -1136,6 +1136,8 @@ body.menu-open {
   margin-bottom: 15px;
 }
 .product-info h1 {
+  font-size: clamp(18px, 4vw, 24px);
+  text-transform: uppercase;
   margin-bottom: 18px;
 }
 .product-info__category {
@@ -1251,11 +1253,41 @@ body.menu-open {
 
 .product-tabs__nav {
   position: sticky;
-  top: 72px;
+  top: 90px;
   z-index: 15;
   background: #fff;
   margin-bottom: 45px;
   border-bottom: 1px solid #e6e6e6;
+}
+
+/* Ширина всього скроллбара */
+.product-tabs__nav::-webkit-scrollbar {
+  width: 12px;
+  height: 4px;
+}
+
+/* Фон доріжки (треку), де рухається бігунок */
+.product-tabs__nav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 12px;
+  height: 4px;
+}
+
+/* Сам бігунок (повзунок) */
+.product-tabs__nav::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Зміна кольору бігунка при наведенні */
+.product-tabs__nav::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Для Firefox (оновлений стандарт) */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #c5c5c5 #f1f1f1;
 }
 
 .product-tabs__btn {
@@ -3440,6 +3472,7 @@ body.menu-open {
     min-width: 100%;
   }
   .product-tabs__nav {
+    top: 72px;
     overflow: auto;
     white-space: nowrap;
     padding-bottom: 10px;

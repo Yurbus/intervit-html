@@ -1,20 +1,44 @@
 .product-tabs{
     padding-bottom: 90px;
 }
-// .product-tabs__nav{
-//     display:flex;
-//     gap:12px;
-//     margin-bottom:45px;
-//     border-bottom:1px solid $border;
-// }
 .product-tabs__nav{
     position:sticky;
-    top:72px;
+    top:90px;
     z-index:15;
     background:#fff;
     margin-bottom:45px;
     border-bottom:1px solid $border;
 }
+/* Ширина всього скроллбара */
+.product-tabs__nav::-webkit-scrollbar {
+    width: 12px;
+    height: 4px;
+}
+
+/* Фон доріжки (треку), де рухається бігунок */
+.product-tabs__nav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 12px;
+    height: 4px;
+}
+
+/* Сам бігунок (повзунок) */
+.product-tabs__nav::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Зміна кольору бігунка при наведенні */
+.product-tabs__nav::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Для Firefox (оновлений стандарт) */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #c5c5c5 #f1f1f1;
+}
+
 .product-tabs__btn{
     position:relative;
     padding:18px 30px;
@@ -27,88 +51,50 @@
     transition:.3s;
 
     &::after{
-
         content:"";
-
         position:absolute;
-
         left:0;
         bottom:-1px;
-
         width:100%;
         height:3px;
-
         background:$orange;
-
         transform:scaleX(0);
-
         transition:.3s;
-
     }
-
     &:hover{
-
         color:$black;
-
     }
-
     &.active{
-
         color:$black;
-
     }
-
     &.active::after{
-
         transform:scaleX(1);
-
     }
-
 }
 
 .product-tab{
-
     display:none;
-
     animation:fade .35s;
-
     &.active{
-
         display:block;
-
     }
-
 }
 
 .spec-table{
-
     border-top:1px solid $border;
-
 }
 
 .spec-table__row{
-
     display:grid;
-
     grid-template-columns:280px 1fr;
-
     gap:30px;
-
     padding:20px 0;
-
     border-bottom:1px solid $border;
-
     span{
-
         color:#888;
-
     }
-
     strong{
-
         font-weight:600;
-
     }
-
 }
 
