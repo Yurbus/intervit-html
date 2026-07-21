@@ -22,34 +22,6 @@
     min-width: 0;
 }
 
-.breadcrumbs {
-    margin-bottom: 30px;
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 12px;
-    }
-    &__item {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        color: #8A8A8A;
-        &:not(:last-child)::after {
-            content: "/";
-            margin-left: 12px;
-            color: #C7C7C7;
-        }
-        a {
-            color: inherit;
-            transition: .3s;
-            &:hover {
-                color: $orange;
-            }
-        }
-    }
-}
-
 .catalog-sidebar {
 
     &__toggle {
