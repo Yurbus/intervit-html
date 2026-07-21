@@ -132,3 +132,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }, stepTime);
     }
 });
+
+// ------- Модальне вікно для пошуку ---------------------------------------
+const searchBtn = document.querySelector('.header__search');
+const searchModal = document.querySelector('.search-modal');
+const searchClose = document.querySelector('.search-modal__close');
+const searchOverlay = document.querySelector('.search-modal__overlay');
+const searchInput = document.querySelector('.search-modal input');
+
+function openSearch() {
+
+    searchModal.classList.add('active');
+    document.body.classList.add('lock');
+
+    setTimeout(() => {
+
+        searchInput.focus();
+
+    }, 200);
+
+}
+
+function closeSearch() {
+
+    searchModal.classList.remove('active');
+    document.body.classList.remove('lock');
+
+}
+
+searchBtn.addEventListener('click', openSearch);
+
+searchClose.addEventListener('click', closeSearch);
+
+searchOverlay.addEventListener('click', closeSearch);
+
+document.addEventListener('keydown', function(e){
+
+    if(e.key === 'Escape'){
+
+        closeSearch();
+
+    }
+
+});

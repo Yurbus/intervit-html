@@ -198,9 +198,24 @@
     .error-404__buttons .btn {
         width: 100%;
     }
+    .search-modal__window {
+        border-radius: 18px;
+        padding: 60px 20px;
+    }
+    .search-modal__close {
+        top: 10px;
+        right: 10px;
+    }
+    .search-modal__field input {
+        height: 60px;
+        padding: 0 18px 0 65px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
 
 
 
+    
 
     .footer__menus {
         grid-template-columns: repeat(1, 1fr);

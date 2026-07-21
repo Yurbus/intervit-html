@@ -7,7 +7,13 @@ body {
   color: $text;
   background: $white;
 }
-
+body.lock{
+    overflow:hidden;
+    padding-right: 15px;
+}
+body.lock header {
+  padding-right: 15px;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
